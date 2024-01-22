@@ -11,7 +11,7 @@ import SwiftUI
 struct trying_native_iosApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HelloWorld()
         }
     }
 }

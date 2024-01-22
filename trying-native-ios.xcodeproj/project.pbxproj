@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1815FE382B5E492600CF7F9A /* trying_native_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815FE372B5E492600CF7F9A /* trying_native_iosApp.swift */; };
-		1815FE3A2B5E492600CF7F9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815FE392B5E492600CF7F9A /* ContentView.swift */; };
+		1815FE3A2B5E492600CF7F9A /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815FE392B5E492600CF7F9A /* HelloWorld.swift */; };
 		1815FE3C2B5E492800CF7F9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1815FE3B2B5E492800CF7F9A /* Assets.xcassets */; };
 		1815FE3F2B5E492800CF7F9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1815FE3E2B5E492800CF7F9A /* Preview Assets.xcassets */; };
 		1815FE492B5E492900CF7F9A /* trying_native_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815FE482B5E492900CF7F9A /* trying_native_iosTests.swift */; };
 		1815FE532B5E492900CF7F9A /* trying_native_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815FE522B5E492900CF7F9A /* trying_native_iosUITests.swift */; };
 		1815FE552B5E492900CF7F9A /* trying_native_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815FE542B5E492900CF7F9A /* trying_native_iosUITestsLaunchTests.swift */; };
+		1815FE632B5E4F1100CF7F9A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815FE622B5E4F1100CF7F9A /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		1815FE342B5E492600CF7F9A /* trying-native-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "trying-native-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1815FE372B5E492600CF7F9A /* trying_native_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trying_native_iosApp.swift; sourceTree = "<group>"; };
-		1815FE392B5E492600CF7F9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1815FE392B5E492600CF7F9A /* HelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
 		1815FE3B2B5E492800CF7F9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1815FE3E2B5E492800CF7F9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1815FE442B5E492900CF7F9A /* trying-native-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "trying-native-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		1815FE4E2B5E492900CF7F9A /* trying-native-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "trying-native-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1815FE522B5E492900CF7F9A /* trying_native_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trying_native_iosUITests.swift; sourceTree = "<group>"; };
 		1815FE542B5E492900CF7F9A /* trying_native_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trying_native_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1815FE622B5E4F1100CF7F9A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,9 @@
 		1815FE362B5E492600CF7F9A /* trying-native-ios */ = {
 			isa = PBXGroup;
 			children = (
+				1815FE612B5E4F0400CF7F9A /* models */,
 				1815FE372B5E492600CF7F9A /* trying_native_iosApp.swift */,
-				1815FE392B5E492600CF7F9A /* ContentView.swift */,
+				1815FE392B5E492600CF7F9A /* HelloWorld.swift */,
 				1815FE3B2B5E492800CF7F9A /* Assets.xcassets */,
 				1815FE3D2B5E492800CF7F9A /* Preview Content */,
 			);
@@ -125,6 +128,14 @@
 				1815FE542B5E492900CF7F9A /* trying_native_iosUITestsLaunchTests.swift */,
 			);
 			path = "trying-native-iosUITests";
+			sourceTree = "<group>";
+		};
+		1815FE612B5E4F0400CF7F9A /* models */ = {
+			isa = PBXGroup;
+			children = (
+				1815FE622B5E4F1100CF7F9A /* Theme.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1815FE3A2B5E492600CF7F9A /* ContentView.swift in Sources */,
+				1815FE632B5E4F1100CF7F9A /* Theme.swift in Sources */,
+				1815FE3A2B5E492600CF7F9A /* HelloWorld.swift in Sources */,
 				1815FE382B5E492600CF7F9A /* trying_native_iosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
